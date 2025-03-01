@@ -182,11 +182,6 @@ const handleScrape = async () => {
 
     if (response.status === 201) {
       alert("Successfully stored the data in the backend.");
-      setIsScrapeData(true);
-      setIsSearchFilter(true);
-      setSearchFilterBtn(true);
-      setIsDashboard(true);
-      setMainScrape(true);
     } else {
       console.error("Backend response error:", response);
       alert(`Error: Data could not be stored. Response: ${JSON.stringify(response.data)}`);
